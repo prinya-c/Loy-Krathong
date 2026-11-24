@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vote-loy-krathong/',
+  base: process.env.GITHUB_ACTIONS ? '/Loy-Krathong/' : '/',
   plugins: [
     react(),
     tailwindcss(),
